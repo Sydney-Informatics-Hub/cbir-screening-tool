@@ -20,5 +20,5 @@ const processed = rawData.map((item, index) => ({
   motivation: item.cbi_percent_motivation_f_corrected,
 }));
 
-writeFileSync("./processed_data/cohortDataProcessed.json", JSON.stringify(processed, null, 2));
-console.log(`Done — ${processed.length} records written to processed_data/cohortDataProcessed.json`);
+writeFileSync("./processed_json/cohortDataProcessed.json", JSON.stringify(processed, null, 2));
+console.log(`Done — ${processed.length} records written to processed_json/cohortDataProcessed.json`);
