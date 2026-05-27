@@ -12,7 +12,7 @@ export default function About() {
             About the CBI-R Online Screening Tool
           </h1>
           <Image
-            src={`${process.env.NEXT_PUBLIC_BASE_PATH}/Frontier_logo_2020.png`}
+            src="/Frontier_logo_2020.png"
             alt="Frontier Logo"
             width={150}
             height={150}
