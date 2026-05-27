@@ -1,8 +1,6 @@
 # CBIR Online Screening Tool
 
-Online scoring tool for clinicians administering the Cambridge Behavioural Inventory-Revised (CBI-R). 
-
-The raw data required to generate some of the JSON data used in the site is not included.
+This repo contains the code for https://github.com/Sydney-Informatics-Hub/cbir-screening-tool. The raw data required to generate some of the JSON data used in the site is not included.
 
 ©️ Sydney Informatics Hub, 2026.
 
