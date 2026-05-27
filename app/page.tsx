@@ -1014,7 +1014,7 @@ export default function AssessmentPage() {
       // Guard against division by zero (all items marked N/A)
       const percentageScore =
         categoryMaxScore > 0 ? (categoryScore / categoryMaxScore) * 100 : 0;
-      patientScores[categoryKeys[categoryIndex]] = percentageScore;
+      patientScores[categoryKeys[categoryIndex] as keyof PatientScores] = percentageScore;
     });
 
     // STEP 3: Persist percentage scores and minimum data flags to shared context
