@@ -147,7 +147,7 @@ interface CategoryWithStatus {
  * @property calculateDensity    - KDE function (defined in the parent) that converts
  *                                 an array of raw scores into (x, density) pairs
  * @property cohortData          - Full reference cohort array passed down so the
- *                                 component doesn't need its own import
+ *                                 component doesn't need its own import.
  */
 interface DistributionPlotProps {
   domain: { key: string; label: string };
