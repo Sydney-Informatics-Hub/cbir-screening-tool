@@ -1582,7 +1582,7 @@ export default function AssessmentPage() {
       const margin = 14;
       const footerMargin = 16;
 
-      const logoImg = await loadImage("/Frontier_logo_2020.png").catch(() => null);
+      const logoImg = await loadImage(`${process.env.NEXT_PUBLIC_BASE_PATH}/Frontier_logo_2020.png`).catch(() => null);
 
       /**
        * addHeader

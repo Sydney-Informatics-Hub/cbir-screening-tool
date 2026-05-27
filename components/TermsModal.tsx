@@ -32,7 +32,7 @@ export function TermsModal({ onAccept, onDecline }: TermsModalProps) {
               Terms and Conditions of Use
             </h2>
             <Image 
-              src="/Frontier_logo_2020.png"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH}/Frontier_logo_2020.png`}
               alt="Frontier Logo"
               width={85}
               height={85} 
