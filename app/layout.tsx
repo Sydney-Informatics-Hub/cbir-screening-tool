@@ -3,6 +3,7 @@ import "./globals.css";
 import { Header } from "@/components/Header";
 import { Toaster } from "@/components/ui/sonner";
 import { Providers } from "@/contexts/Providers";
+import AnalyticsScript from "@/components/AnalyticsScript";
 
 export const metadata: Metadata = {
   title: "CBI-R Online Screening Tool",
@@ -24,6 +25,7 @@ export default function RootLayout({
           </main>
           <Toaster />
         </Providers>
+        <AnalyticsScript />
       </body>
     </html>
   );
