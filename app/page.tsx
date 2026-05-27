@@ -91,7 +91,7 @@ import { TermsModal } from "@/components/TermsModal";
 import { useSetPatientScores, useSetPatientMinimumData, type PatientMinimumData, type PatientScores } from "@/contexts/PatientScoresContext";
 import { useTerms } from "@/contexts/TermsContext";
 import { useAssessmentScores } from "@/contexts/AssessmentScoresContext";
-import { cohortData, domains } from "@/processed_data/cohortData";
+import { cohortData, domains } from "@/processed_json/cohortData";
 
 // ============================================================
 // TYPES

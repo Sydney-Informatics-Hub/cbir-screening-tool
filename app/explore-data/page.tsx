@@ -2,7 +2,7 @@
 
 import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
-import { cohortData, domains, type DataPoint, type DomainKey, DIAGNOSIS_TYPES, type DiagnosisType } from '@/processed_data/cohortData';
+import { cohortData, domains, type DataPoint, type DomainKey, DIAGNOSIS_TYPES, type DiagnosisType } from '@/processed_json/cohortData';
 import { Brain, Wrench, User, AlertCircle, Heart, Eye, Utensils, Moon, RotateCw, Target } from 'lucide-react';
 import { usePatientScores, usePatientMinimumData } from '@/contexts/PatientScoresContext';
 
