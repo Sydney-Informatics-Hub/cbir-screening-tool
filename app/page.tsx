@@ -1021,7 +1021,7 @@ export default function AssessmentPage() {
     setPatientScores(patientScores);
     const minimumDataValues = Object.fromEntries(
       categoryKeys.map((key, i) => [key, getHasMinimumData(i, categories[i].items.length)])
-    ) as PatientMinimumData;
+    ) as unknown as PatientMinimumData;
     setPatientMinimumData(minimumDataValues);
 
     // STEP 4: Mark the assessment as submitted to reveal the results report.
