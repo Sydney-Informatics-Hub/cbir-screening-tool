@@ -88,7 +88,7 @@ import Link from "next/link";
 // - domains:                 Array of { key, label } objects that map score keys
 //                            to human-readable domain names for the plots
 import { TermsModal } from "@/components/TermsModal";
-import { useSetPatientScores, useSetPatientMinimumData, type PatientMinimumData } from "@/contexts/PatientScoresContext";
+import { useSetPatientScores, useSetPatientMinimumData, type PatientMinimumData, type PatientScores } from "@/contexts/PatientScoresContext";
 import { useTerms } from "@/contexts/TermsContext";
 import { useAssessmentScores } from "@/contexts/AssessmentScoresContext";
 import { cohortData, domains } from "@/data/cohortData";
@@ -1004,7 +1004,7 @@ export default function AssessmentPage() {
       "motivation",
     ];
 
-    const patientScores: Record<string, number> = {};
+    const patientScores = {} as PatientScores;
     categories.forEach((category, categoryIndex) => {
       const categoryScore = getCategoryScore(categoryIndex, category.items.length);
       const categoryMaxScore = getCategoryMaxScore(
