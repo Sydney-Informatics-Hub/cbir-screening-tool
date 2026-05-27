@@ -19,6 +19,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Download private data
+        run: |
+          curl -H "Authorization: token ${{ secrets.DATA_ACCESS_TOKEN }}" \
+          -H "Accept: application/vnd.github.v3.raw" \
+          -o data/cbi_data_cleaned.json \
+          "https://api.github.com/repos/informatics/PIPE-6246-CBI-R-Visualisation/contents/cbir-screening-tool/data/cbi_data_cleaned.json"
       - uses: actions/setup-node@v4
         with:
           node-version: 24
