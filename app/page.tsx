@@ -670,7 +670,7 @@ const DomainScoreTable = ({
           </div>
 
           {/* Item score table */}
-          <div className="overflow-x-auto">
+          <div className="space-y-4 w-full min-w-0">
             <table className="w-full border-collapse">
               <thead>
                 <tr
@@ -3131,7 +3131,7 @@ export default function AssessmentPage() {
                     <div className="grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-8">
 
                       {/* Domain Summary Table */}
-                      <div className="overflow-x-auto flex items-center">
+                      <div className="overflow-x-auto w-full min-w-0 flex items-center">
                         <table className="border-collapse">
                           <thead>
                             <tr
