@@ -680,7 +680,7 @@ const DomainScoreTable = ({
                   <th className="text-left py-2 px-1 font-semibold text-xs w-10">
                     Q#
                   </th>
-                  <th className="text-left py-2 px-1 font-semibold text-xs">
+                  <th className="text-left py-2 px-1 font-semibold text-xs w-15">
                     Item
                   </th>
                   <th className="text-center py-2 px-1 font-semibold text-xs w-12">
