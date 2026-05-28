@@ -87,6 +87,18 @@ export default function About() {
           </div>
         </section>
 
+        {/* Acknowledgement Section */}
+        <section className="mb-8">
+          <h2 className="text-xl font-bold text-black mb-4 pb-3 border-b border-slate-300">
+            Acknowledgement
+          </h2>
+          <div className="space-y-4 pl-4">
+            <p className="text-base leading-relaxed text-black text-justify">
+              This website was built by Dr Eden Zhang with support from Dr Darya Vanichkina at the <a href="https://www.sydney.edu.au/research/facilities/sydney-informatics-hub.html" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">Sydney Informatics Hub</a>, a Core Research Facility of the University of Sydney.
+            </p>
+          </div>
+        </section>
+
         {/* References Section */}
         <section className="mb-8">
           <h2 className="text-xl font-bold text-black mb-4 pb-3 border-b border-slate-300">
