@@ -3145,10 +3145,10 @@ export default function AssessmentPage() {
                                 Total
                               </th>
                               <th className="text-center py-2 px-1 font-semibold text-xs">
-                                Corrected %
+                                %
                               </th>
                               <th className="text-center py-2 px-1 font-semibold text-xs">
-                                % Threshold
+                                Threshold
                               </th>
                               <th className="text-center py-2 px-1 font-semibold text-xs">
                                 Summary
