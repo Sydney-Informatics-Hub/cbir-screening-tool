@@ -3028,10 +3028,10 @@ export default function AssessmentPage() {
           {/* ===== STICKY SUBMIT / EXPORT BAR ===== */}
           <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 shadow-lg py-3 z-20">
             <div className="max-w-7xl mx-auto px-4">
-              <div className="flex items-center justify-center gap-6">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6">
 
                 {/* Progress indicator */}
-                <div className="flex-1 max-w-md">
+                <div className="w-full sm:flex-1 sm:max-w-md">
                   <div className="flex items-center justify-between text-xs mb-1">
                     <span className="text-slate-600">Progress</span>
                     <span className="font-semibold text-slate-900">
@@ -3059,7 +3059,7 @@ export default function AssessmentPage() {
                 </div>
 
                 {/* Action buttons */}
-                <div className="flex gap-3 shrink-0">
+                <div className="flex w-full sm:w-auto gap-2 sm:gap-3 shrink-0">
                   <Button
                     type="submit"
                     form="assessment-form"
