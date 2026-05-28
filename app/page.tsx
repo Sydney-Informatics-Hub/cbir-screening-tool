@@ -677,7 +677,7 @@ const DomainScoreTable = ({
                   className="text-white"
                   style={{ backgroundColor: "#5B6B7E" }}
                 >
-                  <th className="text-left py-2 px-1 font-semibold text-xs w-10">
+                  <th className="text-center py-2 px-1 font-semibold text-xs w-10">
                     Q#
                   </th>
                   <th className="text-left py-2 px-1 font-semibold text-xs w-15">
@@ -730,7 +730,7 @@ const DomainScoreTable = ({
                       }
                     >
                       {/* Question number */}
-                      <td className="py-2 px-1 border-b border-slate-200">
+                      <td className="py-2 px-1 text-center border-b border-slate-200">
                         <span className="text-xs text-slate-700 font-medium">
                           Q{questionNumber}
                         </span>
