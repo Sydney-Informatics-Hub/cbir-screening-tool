@@ -2628,7 +2628,7 @@ export default function AssessmentPage() {
 
       {/* ===== MAIN PAGE CONTENT ===== */}
       {hasAcceptedTerms && (
-        <div className="space-y-3 max-w-7xl mx-auto pb-16 overflow-x-hidden">
+        <div className="space-y-3 max-w-7xl mx-auto pb-52 sm:pb-16">
 
           {/*
            * Inline success banner — replaces the disruptive native alert() that
