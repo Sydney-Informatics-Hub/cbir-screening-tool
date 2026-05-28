@@ -3373,9 +3373,9 @@ export default function AssessmentPage() {
 
                       {/* Distribution Plots Grid */}
                       <div
-                        className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3">
+                        className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3"
                         id="distribution-plots-container"
-                      >
+                        >
                         {/* Left sub-column: domains 0–4 */}
                         <div className="space-y-3">
                           {domains.slice(0, 5).map((domain, idx) => {
