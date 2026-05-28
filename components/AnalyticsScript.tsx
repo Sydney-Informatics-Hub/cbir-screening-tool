@@ -1,6 +1,6 @@
 import Script from "next/script";
 
-const COUNT_URL = "https://frontier-cbir.goatcounter.com/count";
+const COUNT_URL = "https://cbirtool.goatcounter.com/count";
 
 /** Load the script for GoatCounter analytics.
  */
