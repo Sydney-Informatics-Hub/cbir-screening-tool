@@ -3059,7 +3059,7 @@ export default function AssessmentPage() {
                 </div>
 
                 {/* Action buttons */}
-                <div className="flex w-full sm:w-auto gap-2 sm:gap-3 shrink-0">
+                <div className="flex flex-col sm:flex-row w-full sm:w-auto gap-2 sm:gap-3 shrink-0">
                   <Button
                     type="submit"
                     form="assessment-form"
