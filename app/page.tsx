@@ -677,19 +677,19 @@ const DomainScoreTable = ({
                   className="text-white"
                   style={{ backgroundColor: "#5B6B7E" }}
                 >
-                  <th className="text-left py-2 px-3 font-semibold text-xs w-16">
+                  <th className="text-left py-2 px-1 font-semibold text-xs w-10">
                     Q#
                   </th>
-                  <th className="text-left py-2 px-3 font-semibold text-xs">
+                  <th className="text-left py-2 px-1 font-semibold text-xs">
                     Item
                   </th>
-                  <th className="text-center py-2 px-3 font-semibold text-xs w-20">
+                  <th className="text-center py-2 px-1 font-semibold text-xs w-12">
                     Score
                   </th>
-                  <th className="text-center py-2 px-3 font-semibold text-xs w-24">
+                  <th className="text-center py-2 px-1 font-semibold text-xs w-14">
                     Threshold
                   </th>
-                  <th className="text-center py-2 px-3 font-semibold text-xs w-28">
+                  <th className="text-center py-2 px-1 font-semibold text-xs w-16">
                     Summary
                   </th>
                 </tr>
@@ -754,7 +754,7 @@ const DomainScoreTable = ({
                       {/* WNL / Above Norm / N/A classification */}
                       <td className="py-2 px-3 text-center border-b border-slate-200">
                         <span
-                          className={`text-xs font-medium ${summaryColor} whitespace-nowrap`}
+                          className={`text-xs font-medium ${summaryColor}`}
                         >
                           {summary}
                         </span>
@@ -3138,7 +3138,7 @@ export default function AssessmentPage() {
                               className="text-white"
                               style={{ backgroundColor: "#5B6B7E" }}
                             >
-                              <th className="text-left py-2 px-3 font-semibold text-xs">
+                              <th className="text-left py-2 px-2 font-semibold text-xs">
                                 Subdomain
                               </th>
                               <th className="text-center py-2 px-2 font-semibold text-xs">
@@ -3181,10 +3181,10 @@ export default function AssessmentPage() {
                                     idx % 2 === 0 ? "bg-white" : "bg-slate-50"
                                   }
                                 >
-                                  <td className="py-2 px-3 border-b border-slate-200">
+                                  <td className="py-2 px-2 border-b border-slate-200">
                                     <div className="flex items-center gap-2">
                                       <Icon className="h-3.5 w-3.5 text-blue-600 shrink-0" />
-                                      <span className="text-xs text-slate-800 whitespace-nowrap">
+                                      <span className="text-xs text-slate-800">
                                         {category.title}
                                       </span>
                                     </div>
@@ -3206,7 +3206,7 @@ export default function AssessmentPage() {
                                   </td>
                                   <td className="py-2 px-2 text-center border-b border-slate-200">
                                     <span
-                                      className={`text-xs font-medium ${summaryColor} whitespace-nowrap`}
+                                      className={`text-xs font-medium ${summaryColor}`}
                                     >
                                       {summary}
                                     </span>
