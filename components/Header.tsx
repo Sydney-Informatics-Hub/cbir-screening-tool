@@ -24,7 +24,7 @@ export function Header() {
           </div>
           
           {/* Navigation */}
-          <nav className="flex items-center gap-8 border-b border-slate-200">
+          <nav className="flex flex-wrap items-center gap-4 border-b border-slate-200">
             <Link 
               href="/"
               className={`pb-2 px-1 transition-all border-b-2 ${

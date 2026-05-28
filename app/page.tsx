@@ -2708,7 +2708,7 @@ export default function AssessmentPage() {
                     <h3 className="font-semibold text-slate-900 mb-2 text-sm">
                       Scoring Scale
                     </h3>
-                    <div className="grid grid-cols-6 gap-3 text-center">
+                    <div className="grid grid-cols-3 sm:grid-cols-6 gap-2 text-center">
                       {[
                         { label: "N/A", desc: "Not applicable" },
                         { label: "0", desc: "Never" },
@@ -2737,7 +2737,7 @@ export default function AssessmentPage() {
             id="assessment-form"
             className="space-y-3"
           >
-            <div className="grid grid-cols-3 gap-3">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-3">
 
               {/*
                * Columns 1 and 2 now use the shared CategoryColumn component
@@ -3128,7 +3128,7 @@ export default function AssessmentPage() {
                     </div>
                   </AccordionTrigger>
                   <AccordionContent className="px-6">
-                    <div className="grid grid-cols-[auto_1fr] gap-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-8">
 
                       {/* Domain Summary Table */}
                       <div className="overflow-x-auto flex items-center">
@@ -3369,11 +3369,11 @@ export default function AssessmentPage() {
                     </div>
                   </AccordionTrigger>
                   <AccordionContent className="px-6">
-                    <div className="grid grid-cols-[2fr_auto] gap-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-[2fr_auto] gap-8">
 
                       {/* Distribution Plots Grid */}
                       <div
-                        className="grid grid-cols-2 gap-x-6 gap-y-3"
+                        className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3">
                         id="distribution-plots-container"
                       >
                         {/* Left sub-column: domains 0–4 */}
@@ -3545,7 +3545,7 @@ export default function AssessmentPage() {
                      * Left and right columns now use the shared DomainScoreTable
                      * component instead of duplicated JSX.
                      */}
-                    <div className="grid grid-cols-2 gap-x-6 gap-y-4">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-4">
                       <DomainScoreTable
                         categories={allCategoriesWithStatus.slice(0, 5)}
                         scores={scores}

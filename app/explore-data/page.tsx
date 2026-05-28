@@ -223,9 +223,9 @@ export default function ExploreDataPage() {
   return (
     <div className="min-h-screen bg-gray-50 p-8">
       <div className="max-w-7xl mx-auto">
-        <div className="flex gap-6">
+        <div className="flex flex-col lg:flex-row gap-6">
           {/* Left Sidebar - Title, Description, and Filters */}
-          <div className="w-64 flex-shrink-0 flex flex-col">
+          <div className="w-full lg:w-64 flex-shrink-0 flex flex-col">
             <div className="mb-8">
               <h1 className="text-4xl font-bold text-gray-900 mb-3">Explore Our Cohort</h1>
               <p className="text-gray-700">
@@ -397,7 +397,7 @@ export default function ExploreDataPage() {
 
           {/* Right Side - Charts Grid */}
           <div className="flex-1">
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <DomainChart
                 title="Memory and Orientation"
                 domainKey="memoryOrientation"
