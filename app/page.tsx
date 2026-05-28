@@ -686,10 +686,10 @@ const DomainScoreTable = ({
                   <th className="text-center py-2 px-1 font-semibold text-xs w-12">
                     Score
                   </th>
-                  <th className="text-center py-2 px-1 font-semibold text-xs w-14">
+                  <th className="text-center py-2 px-1 font-semibold text-xs w-12">
                     Threshold
                   </th>
-                  <th className="text-center py-2 px-1 font-semibold text-xs w-16">
+                  <th className="text-center py-2 px-1 font-semibold text-xs w-14">
                     Summary
                   </th>
                 </tr>
@@ -730,29 +730,29 @@ const DomainScoreTable = ({
                       }
                     >
                       {/* Question number */}
-                      <td className="py-2 px-3 border-b border-slate-200">
+                      <td className="py-2 px-1 border-b border-slate-200">
                         <span className="text-xs text-slate-700 font-medium">
                           Q{questionNumber}
                         </span>
                       </td>
                       {/* Full item question text */}
-                      <td className="py-2 px-3 border-b border-slate-200">
+                      <td className="py-2 px-1 border-b border-slate-200">
                         <span className="text-xs text-slate-700">{item}</span>
                       </td>
                       {/* Score cell — blue tint to draw attention */}
-                      <td className="py-2 px-3 text-center border-b border-slate-200 bg-blue-50">
+                      <td className="py-2 px-1 text-center border-b border-slate-200 bg-blue-50">
                         <span className="text-xs text-slate-900 font-medium">
                           {itemScore || "—"}
                         </span>
                       </td>
                       {/* Per-item normative threshold */}
-                      <td className="py-2 px-3 text-center border-b border-slate-200">
+                      <td className="py-2 px-1 text-center border-b border-slate-200">
                         <span className="text-xs text-slate-700 font-medium">
                           {threshold}
                         </span>
                       </td>
                       {/* WNL / Above Norm / N/A classification */}
-                      <td className="py-2 px-3 text-center border-b border-slate-200">
+                      <td className="py-2 px-1 text-center border-b border-slate-200">
                         <span
                           className={`text-xs font-medium ${summaryColor}`}
                         >
@@ -3132,25 +3132,25 @@ export default function AssessmentPage() {
 
                       {/* Domain Summary Table */}
                       <div className="overflow-x-auto min-w-0 w-full flex items-center">
-                        <table className="border-collapse">
+                        <table className="border-collapse w-full">
                           <thead>
                             <tr
                               className="text-white"
                               style={{ backgroundColor: "#5B6B7E" }}
                             >
-                              <th className="text-left py-2 px-2 font-semibold text-xs">
+                              <th className="text-left py-2 px-1 font-semibold text-xs">
                                 Subdomain
                               </th>
-                              <th className="text-center py-2 px-2 font-semibold text-xs">
+                              <th className="text-center py-2 px-1 font-semibold text-xs">
                                 Total
                               </th>
-                              <th className="text-center py-2 px-2 font-semibold text-xs">
+                              <th className="text-center py-2 px-1 font-semibold text-xs">
                                 Corrected %
                               </th>
-                              <th className="text-center py-2 px-2 font-semibold text-xs">
+                              <th className="text-center py-2 px-1 font-semibold text-xs">
                                 % Threshold
                               </th>
-                              <th className="text-center py-2 px-2 font-semibold text-xs">
+                              <th className="text-center py-2 px-1 font-semibold text-xs">
                                 Summary
                               </th>
                             </tr>
@@ -3181,30 +3181,30 @@ export default function AssessmentPage() {
                                     idx % 2 === 0 ? "bg-white" : "bg-slate-50"
                                   }
                                 >
-                                  <td className="py-2 px-2 border-b border-slate-200">
-                                    <div className="flex items-center gap-2">
+                                  <td className="py-2 px-1 border-b border-slate-200">
+                                    <div className="flex items-center gap-2 ...">
                                       <Icon className="h-3.5 w-3.5 text-blue-600 shrink-0" />
                                       <span className="text-xs text-slate-800">
                                         {category.title}
                                       </span>
                                     </div>
                                   </td>
-                                  <td className="py-2 px-2 text-center border-b border-slate-200">
+                                  <td className="py-2 px-1 text-center border-b border-slate-200">
                                     <span className="text-xs text-slate-800">
                                       {category.score} / {category.maxScore}
                                     </span>
                                   </td>
-                                  <td className="py-2 px-2 text-center border-b border-slate-200">
+                                  <td className="py-2 px-1 text-center border-b border-slate-200">
                                     <span className="text-xs text-slate-800">
                                       {correctedPct.toFixed(1)}%
                                     </span>
                                   </td>
-                                  <td className="py-2 px-2 text-center border-b border-slate-200">
+                                  <td className="py-2 px-1 text-center border-b border-slate-200">
                                     <span className="text-xs text-slate-800">
                                       {thresholdPct}%
                                     </span>
                                   </td>
-                                  <td className="py-2 px-2 text-center border-b border-slate-200">
+                                  <td className="py-2 px-1 text-center border-b border-slate-200">
                                     <span
                                       className={`text-xs font-medium ${summaryColor}`}
                                     >
