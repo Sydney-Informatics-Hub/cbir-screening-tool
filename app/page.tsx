@@ -3132,25 +3132,25 @@ export default function AssessmentPage() {
 
                       {/* Domain Summary Table */}
                       <div className="overflow-x-auto min-w-0 w-full flex items-center">
-                        <table className="border-collapse w-full">
+                        <table className="border-collapse w-full table-fixed">
                           <thead>
                             <tr
                               className="text-white"
                               style={{ backgroundColor: "#5B6B7E" }}
                             >
-                              <th className="text-left py-2 px-1 font-semibold text-xs">
+                              <th className="text-left py-2 px-1 font-semibold text-xs w-[28%]">
                                 Subdomain
                               </th>
-                              <th className="text-center py-2 px-1 font-semibold text-xs">
+                              <th className="text-center py-2 px-1 font-semibold text-xs w-[13%]">
                                 Total
                               </th>
-                              <th className="text-center py-2 px-1 font-semibold text-xs">
+                              <th className="text-center py-2 px-1 font-semibold text-xs w-[19%]">
                                 Corrected %
                               </th>
-                              <th className="text-center py-2 px-1 font-semibold text-xs">
+                              <th className="text-center py-2 px-1 font-semibold text-xs w-[19%]">
                                 % Threshold
                               </th>
-                              <th className="text-center py-2 px-1 font-semibold text-xs">
+                              <th className="text-center py-2 px-1 font-semibold text-xs w-[21%]">
                                 Summary
                               </th>
                             </tr>
