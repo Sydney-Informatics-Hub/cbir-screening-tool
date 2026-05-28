@@ -653,7 +653,7 @@ const DomainScoreTable = ({
   scores,
   itemThresholds,
 }: DomainScoreTableProps) => (
-  <div className="space-y-4">
+  <div className="space-y-4 min-w-0">
     {categories.map((category) => {
       const Icon = category.icon;
       return (
@@ -2628,7 +2628,7 @@ export default function AssessmentPage() {
 
       {/* ===== MAIN PAGE CONTENT ===== */}
       {hasAcceptedTerms && (
-        <div className="space-y-3 max-w-7xl mx-auto pb-16">
+        <div className="space-y-3 max-w-7xl mx-auto pb-16 overflow-x-hidden">
 
           {/*
            * Inline success banner — replaces the disruptive native alert() that
@@ -3131,7 +3131,7 @@ export default function AssessmentPage() {
                     <div className="grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-8">
 
                       {/* Domain Summary Table */}
-                      <div className="overflow-x-auto w-full min-w-0 flex items-center">
+                      <div className="overflow-x-auto min-w-0 w-full flex items-center">
                         <table className="border-collapse">
                           <thead>
                             <tr
